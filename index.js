@@ -34,7 +34,7 @@ function renderCode(origRule, options) {
 <div style="position: relative">
 	${origRendered}
 	<button class="markdown-it-code-copy ${options.buttonClass}" data-clipboard-text="${content}" style="${options.buttonStyle}" title="Copy">
-		<span style="${options.iconStyle}" class="${options.iconClass}">${options.svgIcon}</span>
+		<span style="${options.iconStyle}" class="${options.iconClass}">Copy</span>
 	</button>
 </div>
 `;
