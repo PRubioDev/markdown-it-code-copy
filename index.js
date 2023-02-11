@@ -14,7 +14,8 @@ const defaultOptions = {
 	iconStyle: 'font-size: 21px; opacity: 0.4;',
 	iconClass: 'mdi mdi-content-copy',
 	buttonStyle: 'position: absolute; top: 7.5px; right: 6px; cursor: pointer; outline: none;',
-	buttonClass: ''
+	buttonClass: '',
+	svgIcon: ''
 };
 
 function renderCode(origRule, options) {
@@ -33,7 +34,7 @@ function renderCode(origRule, options) {
 <div style="position: relative">
 	${origRendered}
 	<button class="markdown-it-code-copy ${options.buttonClass}" data-clipboard-text="${content}" style="${options.buttonStyle}" title="Copy">
-		<span style="${options.iconStyle}" class="${options.iconClass}"></span>
+		<span style="${options.iconStyle}" class="${options.iconClass}">${options.svgIcon}</span>
 	</button>
 </div>
 `;
